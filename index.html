@@ -15,19 +15,23 @@
   <nav class="border-b border-slate-200 bg-white sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <div class="flex items-center gap-2">
-          <div class="w-8 h-8 bg-slate-800 rounded-xl flex items-center justify-center">
-            <span class="text-white font-bold text-lg tracking-[-1px]">TNIC</span>
-          </div>
-          <span class="font-semibold text-2xl tracking-tight text-slate-900">TNIC</span>
+        <!-- Improved TNIC Logo -->
+        <div class="flex items-center gap-3">
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="19" cy="19" r="17" stroke="#0F172A" stroke-width="2.5"/>
+            <circle cx="19" cy="19" r="9" fill="#0F172A"/>
+            <circle cx="19" cy="19" r="5" fill="#16A34A"/>
+            <path d="M10 28 Q19 33 28 28" stroke="#16A34A" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <span class="font-semibold text-3xl tracking-[-1.5px] text-slate-900">TNIC</span>
         </div>
       </div>
       
       <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
         <a href="#framework" class="hover:text-slate-900 transition">Framework</a>
         <a href="#nrf2" class="hover:text-slate-900 transition">NRF2</a>
+        <a href="#formulations" class="hover:text-slate-900 transition">Formulations</a>
         <a href="#evidence" class="hover:text-slate-900 transition">Evidence</a>
-        <a href="#principles" class="hover:text-slate-900 transition">Principles</a>
         <a href="#vision" class="hover:text-slate-900 transition">Vision</a>
       </div>
 
@@ -57,8 +61,8 @@
       <a href="#framework" class="px-9 py-3.5 bg-slate-900 text-white rounded-2xl font-medium hover:bg-black transition">
         Explore the Framework
       </a>
-      <a href="#nrf2" class="px-9 py-3.5 border border-slate-300 rounded-2xl font-medium hover:bg-slate-50 transition text-slate-700">
-        Focus on NRF2
+      <a href="#formulations" class="px-9 py-3.5 border border-slate-300 rounded-2xl font-medium hover:bg-slate-50 transition text-slate-700">
+        View Supporting Formulations
       </a>
     </div>
   </div>
@@ -93,13 +97,11 @@
         <h3 class="text-2xl font-semibold tracking-tight mb-4">Oxidative Stress Response</h3>
         <p class="text-slate-600">The enzymatic and non-enzymatic systems responsible for neutralizing reactive oxygen species and maintaining cellular redox balance across tissues. Sustained modern pressures can overwhelm these systems over time.</p>
       </div>
-      
       <div class="bg-white border border-slate-200 rounded-2xl p-8">
         <div class="text-xs font-semibold tracking-widest text-emerald-700 mb-4">SYSTEM 02</div>
         <h3 class="text-2xl font-semibold tracking-tight mb-4">Inflammatory Resolution</h3>
         <p class="text-slate-600">The active biological programs that initiate protective inflammation when needed and then resolve it to prevent chronic tissue damage and dysfunction.</p>
       </div>
-      
       <div class="bg-white border border-slate-200 rounded-2xl p-8">
         <div class="text-xs font-semibold tracking-widest text-emerald-700 mb-4">SYSTEM 03</div>
         <h3 class="text-2xl font-semibold tracking-tight mb-4">Mitochondrial Quality Control</h3>
@@ -115,14 +117,12 @@
         <div class="md:col-span-7 mb-10 md:mb-0">
           <div class="text-sm font-semibold tracking-widest text-slate-500 mb-3">PRIMARY REGULATORY PATHWAY</div>
           <h2 class="text-4xl font-semibold tracking-tight text-slate-900 mb-6">NRF2: Master Regulator of Cellular Defense</h2>
-          
           <div class="text-lg text-slate-600 space-y-5">
             <p>NRF2 (Nuclear factor erythroid 2-related factor 2) is the central transcription factor responsible for coordinating the cellular response to oxidative and electrophilic stress. Under normal conditions, NRF2 is bound by Keap1 and targeted for degradation.</p>
             <p>When cells experience oxidative stress or exposure to electrophiles, Keap1 is modified, allowing NRF2 to accumulate, translocate to the nucleus, and activate antioxidant response elements (ARE). This triggers the expression of hundreds of cytoprotective genes involved in antioxidant defense, detoxification, and mitochondrial support.</p>
-            <p>Because of its broad protective effects across multiple biological systems, NRF2 is considered one of the most important pathways in cellular resilience and the biology of aging.</p>
+            <p>Because of its broad protective effects, NRF2 is considered one of the most important pathways in cellular resilience and the biology of aging.</p>
           </div>
         </div>
-        
         <div class="md:col-span-5">
           <div class="bg-slate-900 text-white rounded-2xl p-8">
             <div class="text-xs font-semibold tracking-widest text-slate-400 mb-5">KEY BIOLOGICAL EFFECTS</div>
@@ -139,108 +139,116 @@
     </div>
   </div>
 
-  <!-- Evidence Standards -->
-  <div id="evidence" class="max-w-5xl mx-auto px-6 py-20">
-    <div class="max-w-3xl mb-16">
-      <div class="text-sm font-semibold tracking-widest text-slate-500 mb-2">OUR STANDARDS</div>
-      <h2 class="text-4xl font-semibold tracking-tight text-slate-900 mb-6">How We Approach Evidence</h2>
-      <div class="text-lg text-slate-600">
-        We prioritize primary peer-reviewed literature, mechanistic clarity, and transparent acknowledgment of limitations. Our goal is intellectual honesty rather than marketing appeal. All content is developed with attention to study design, effect sizes, biological plausibility, and the overall strength of supporting evidence.
-      </div>
+  <!-- Evidence-Based Formulations -->
+  <div id="formulations" class="max-w-7xl mx-auto px-6 py-20 bg-slate-50">
+    <div class="text-center mb-12">
+      <div class="text-sm font-semibold tracking-widest text-slate-500 mb-2">SUPPORTING FORMULATIONS</div>
+      <h2 class="text-4xl font-semibold tracking-tight text-slate-900">Evidence-Based Formulations</h2>
+      <p class="mt-3 text-lg text-slate-600 max-w-2xl mx-auto">Formulations referenced in research on cellular defense, glutathione support, and NRF2 activation pathways.</p>
     </div>
 
-    <!-- Principles -->
-    <div id="principles">
-      <div class="text-center mb-10">
-        <div class="text-sm font-semibold tracking-widest text-slate-500 mb-2">OUR APPROACH</div>
-        <h2 class="text-4xl font-semibold tracking-tight text-slate-900">Platform Principles</h2>
-      </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="border border-slate-200 rounded-2xl p-8">
-          <h3 class="font-semibold text-xl mb-3">Scientific Rigor First</h3>
-          <p class="text-slate-600">We prioritize mechanistic understanding and evidence quality over narrative convenience or commercial positioning.</p>
-        </div>
-        <div class="border border-slate-200 rounded-2xl p-8">
-          <h3 class="font-semibold text-xl mb-3">Transparency</h3>
-          <p class="text-slate-600">We clearly distinguish between established mechanisms, emerging research, and areas of uncertainty.</p>
-        </div>
-        <div class="border border-slate-200 rounded-2xl p-8">
-          <h3 class="font-semibold text-xl mb-3">Long-term Orientation</h3>
-          <p class="text-slate-600">We focus on foundational biology and sustainable progress rather than short-term hype or quick fixes.</p>
-        </div>
-        <div class="border border-slate-200 rounded-2xl p-8">
-          <h3 class="font-semibold text-xl mb-3">Institutional Credibility</h3>
-          <p class="text-slate-600">We build with the standards of a serious research communication platform, not a consumer wellness brand.</p>
+      <!-- 1. GlyNac ET -->
+      <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+        <img src="https://picsum.photos/id/1015/600/280" alt="GlyNac ET by Nutri" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-semibold text-xl mb-1">GlyNac ET by Nutri</h3>
+          <p class="text-sm text-emerald-700 font-medium mb-3">Glycine + NAC Ethyl Ester</p>
+          <p class="text-slate-600 text-sm mb-4">A more bioavailable form of GlyNAC designed to support glutathione production and cellular antioxidant defenses. NAC Ethyl Ester offers significantly higher bioavailability than standard NAC.</p>
+          <a href="https://www.amazon.com/GlyNAC-Supplement-N-Acetyl-Cysteine-Ethyl/dp/B0BBSJNYC3" target="_blank" 
+             class="inline-block px-5 py-2 bg-slate-900 text-white text-sm rounded-xl hover:bg-black transition">View Product →</a>
         </div>
       </div>
+
+      <!-- 2. Alpha Lipoic Acid -->
+      <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+        <img src="https://picsum.photos/id/106/600/280" alt="Alpha Lipoic Acid by Nutri" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-semibold text-xl mb-1">Alpha Lipoic Acid by Nutri</h3>
+          <p class="text-sm text-emerald-700 font-medium mb-3">R-Alpha Lipoic Acid</p>
+          <p class="text-slate-600 text-sm mb-4">Potent mitochondrial antioxidant that supports energy production and helps regenerate other antioxidants, including glutathione. Often studied for its role in metabolic and neurological health.</p>
+          <a href="#" target="_blank" 
+             class="inline-block px-5 py-2 bg-slate-900 text-white text-sm rounded-xl hover:bg-black transition">View Product →</a>
+        </div>
+      </div>
+
+      <!-- 3. Codeage NMN Platinum -->
+      <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+        <img src="https://picsum.photos/id/201/600/280" alt="Codeage NMN Platinum" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-semibold text-xl mb-1">Codeage NMN Platinum</h3>
+          <p class="text-sm text-emerald-700 font-medium mb-3">Liposomal NMN + Resveratrol + TMG</p>
+          <p class="text-slate-600 text-sm mb-4">Advanced NMN formula combining stabilized nicotinamide mononucleotide with trans-resveratrol, TMG (betaine), and quercetin to support NAD+ levels and cellular energy metabolism.</p>
+          <a href="https://www.codeage.com/products/liposomal-nmn-supplement-reveratrol-betaine-vitamin-b" target="_blank" 
+             class="inline-block px-5 py-2 bg-slate-900 text-white text-sm rounded-xl hover:bg-black transition">View Product →</a>
+        </div>
+      </div>
+
+      <!-- 4. Resveratrol by Nutri -->
+      <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+        <img src="https://picsum.photos/id/160/600/280" alt="Resveratrol by Nutri" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-semibold text-xl mb-1">Resveratrol by Nutri</h3>
+          <p class="text-sm text-emerald-700 font-medium mb-3">Trans-Resveratrol</p>
+          <p class="text-slate-600 text-sm mb-4">High-purity trans-resveratrol studied for its role in supporting sirtuin activity, mitochondrial function, and cellular defense mechanisms associated with healthy aging.</p>
+          <a href="#" target="_blank" 
+             class="inline-block px-5 py-2 bg-slate-900 text-white text-sm rounded-xl hover:bg-black transition">View Product →</a>
+        </div>
+      </div>
+
+      <!-- 5. Nrf2 Rising -->
+      <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+        <img src="https://picsum.photos/id/251/600/280" alt="Nrf2 Rising by Nutricology" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-semibold text-xl mb-1">Nrf2 Rising (Nutricology)</h3>
+          <p class="text-sm text-emerald-700 font-medium mb-3">NRF2 Activator Complex</p>
+          <p class="text-slate-600 text-sm mb-4">A targeted blend including sulforaphane and other phytonutrients designed to support NRF2 pathway activation and endogenous antioxidant response systems.</p>
+          <a href="https://nutricology.com/nrf2-rising-120-vegetarian-capsules/" target="_blank" 
+             class="inline-block px-5 py-2 bg-slate-900 text-white text-sm rounded-xl hover:bg-black transition">View Product →</a>
+        </div>
+      </div>
+
     </div>
+    
+    <p class="text-center text-sm text-slate-500 mt-8 max-w-3xl mx-auto">These formulations are referenced for educational and research purposes based on available mechanistic and clinical literature. Always consult a qualified healthcare professional before use.</p>
   </div>
 
-  <!-- Key Research Areas -->
-  <div class="border-y border-slate-200 py-16 bg-slate-50">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-12">
-        <div class="text-sm font-semibold tracking-widest text-slate-500 mb-2">RESEARCH FOCUS</div>
-        <h2 class="text-4xl font-semibold tracking-tight text-slate-900">Key Research Areas</h2>
-      </div>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white border border-slate-200 rounded-2xl p-8">
-          <h3 class="font-semibold text-xl mb-3">NRF2 Activation Pathways</h3>
-          <p class="text-slate-600">Mechanistic research on NRF2 regulation, downstream effects, and nutritional modulation strategies.</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-8">
-          <h3 class="font-semibold text-xl mb-3">Mitochondrial Resilience</h3>
-          <p class="text-slate-600">Study of mitochondrial biogenesis, mitophagy, and nutritional support for mitochondrial health with age.</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-8">
-          <h3 class="font-semibold text-xl mb-3">Glutathione Metabolism</h3>
-          <p class="text-slate-600">Research on glutathione synthesis, recycling, and nutritional precursors including GlyNAC.</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-8">
-          <h3 class="font-semibold text-xl mb-3">Inflammatory Resolution</h3>
-          <p class="text-slate-600">Mechanisms of inflammation resolution and nutritional strategies to support healthy inflammatory balance.</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-8">
-          <h3 class="font-semibold text-xl mb-3">Redox Biology</h3>
-          <p class="text-slate-600">Cellular redox signaling, oxidative stress adaptation, and nutritional modulation of redox systems.</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-8">
-          <h3 class="font-semibold text-xl mb-3">Nutritional Pharmacology</h3>
-          <p class="text-slate-600">Study of bioactive compounds and their mechanisms in supporting cellular defense and resilience.</p>
-        </div>
-      </div>
+  <!-- Evidence + Principles -->
+  <div id="evidence" class="max-w-5xl mx-auto px-6 py-16">
+    <div class="max-w-3xl mb-12">
+      <div class="text-sm font-semibold tracking-widest text-slate-500 mb-2">OUR STANDARDS</div>
+      <h2 class="text-4xl font-semibold tracking-tight text-slate-900 mb-6">How We Approach Evidence</h2>
+      <div class="text-lg text-slate-600">We prioritize primary peer-reviewed literature, mechanistic clarity, and transparent acknowledgment of limitations. Our goal is intellectual honesty rather than marketing appeal.</div>
     </div>
   </div>
 
   <!-- Vision -->
-  <div id="vision" class="max-w-6xl mx-auto px-6 py-20">
-    <div class="text-center mb-12">
-      <div class="text-sm font-semibold tracking-widest text-slate-500 mb-2">THE ROAD AHEAD</div>
-      <h2 class="text-4xl font-semibold tracking-tight text-slate-900">Platform Vision</h2>
-    </div>
-    
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="border border-slate-200 rounded-2xl p-8">
-        <div class="font-semibold text-xl mb-5">Near Term (2026–2027)</div>
-        <ul class="space-y-3 text-slate-600">
-          <li>• Expanded NRF2 research module with interactive tools</li>
-          <li>• Mitochondrial resilience tools and literature synthesis</li>
-          <li>• GlyNAC and glutathione research library</li>
-          <li>• Formal evidence standards documentation</li>
-          <li>• Regular research updates and briefings</li>
-        </ul>
+  <div id="vision" class="border-y border-slate-200 py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-10">
+        <div class="text-sm font-semibold tracking-widest text-slate-500 mb-2">THE ROAD AHEAD</div>
+        <h2 class="text-4xl font-semibold tracking-tight text-slate-900">Platform Vision</h2>
       </div>
-      <div class="border border-slate-200 rounded-2xl p-8">
-        <div class="font-semibold text-xl mb-5">Longer Term</div>
-        <ul class="space-y-3 text-slate-600">
-          <li>• Curated primary literature library</li>
-          <li>• Interactive biological pathway explorers</li>
-          <li>• Structured evidence synthesis tools</li>
-          <li>• Research collaboration features</li>
-          <li>• Expanded educational modules across key longevity pathways</li>
-        </ul>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="border border-slate-200 rounded-2xl p-8">
+          <div class="font-semibold text-xl mb-4">Near Term (2026–2027)</div>
+          <ul class="space-y-2.5 text-slate-600">
+            <li>• Expanded NRF2 research module with interactive tools</li>
+            <li>• Mitochondrial resilience tools and literature synthesis</li>
+            <li>• GlyNAC and glutathione research library</li>
+            <li>• Formal evidence standards documentation</li>
+          </ul>
+        </div>
+        <div class="border border-slate-200 rounded-2xl p-8">
+          <div class="font-semibold text-xl mb-4">Longer Term</div>
+          <ul class="space-y-2.5 text-slate-600">
+            <li>• Curated primary literature library</li>
+            <li>• Interactive biological pathway explorers</li>
+            <li>• Structured evidence synthesis tools</li>
+            <li>• Research collaboration features</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
