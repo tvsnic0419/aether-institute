@@ -3,57 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aether Institute | Cellular Resilience</title>
+  <title>Aether Institute | Cellular Resilience Research</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; }
+  </style>
 </head>
 <body class="bg-[#F8FAFC] text-slate-900">
-  <div class="max-w-4xl mx-auto px-6 py-20">
+  
+  <!-- Hero -->
+  <div class="max-w-5xl mx-auto px-6 pt-16 pb-20 text-center">
+    <div class="inline-block px-4 py-1 rounded-full border border-slate-300 text-sm mb-6">
+      INSTITUTIONAL RESEARCH PLATFORM
+    </div>
     
-    <!-- Header -->
-    <div class="text-center mb-16">
-      <div class="inline-block px-4 py-1 rounded-full border border-slate-300 text-sm mb-4">
-        INSTITUTIONAL RESEARCH PLATFORM
-      </div>
-      <h1 class="text-5xl font-semibold tracking-tight mb-4">
-        Cellular Resilience<br>in an Aging Population
-      </h1>
-      <p class="text-xl text-slate-600 max-w-2xl mx-auto">
-        A scientific platform examining oxidative stress, mitochondrial function, 
-        and NRF2 activation pathways that govern cellular defense.
-      </p>
+    <h1 class="text-5xl md:text-6xl font-semibold tracking-tight mb-6">
+      Cellular Resilience<br>in an Aging Population
+    </h1>
+    
+    <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10">
+      A scientific platform examining oxidative stress, mitochondrial function, 
+      and NRF2 activation pathways that govern cellular defense.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#framework" 
+         class="px-8 py-3 bg-slate-900 text-white rounded-xl hover:bg-slate-800 transition">
+        Explore the Framework
+      </a>
+      <a href="https://github.com/tvsnic0419/aether-institute" 
+         class="px-8 py-3 border border-slate-300 rounded-xl hover:bg-white transition">
+        View on GitHub
+      </a>
+    </div>
+  </div>
+
+  <!-- Framework Section -->
+  <div id="framework" class="max-w-5xl mx-auto px-6 pb-20">
+    <div class="text-center mb-12">
+      <div class="text-sm font-medium tracking-widest text-slate-500 mb-2">THE FRAMEWORK</div>
+      <h2 class="text-4xl font-semibold tracking-tight">Cellular Defense Systems</h2>
     </div>
 
-    <!-- Main Content -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       
       <!-- Card 1 -->
       <div class="bg-white border border-slate-200 rounded-2xl p-8">
-        <h3 class="font-semibold text-xl mb-3">Oxidative Stress Response</h3>
-        <p class="text-slate-600">Endogenous systems that neutralize reactive oxygen species and maintain redox balance.</p>
+        <h3 class="font-semibold text-2xl mb-4">Oxidative Stress Response</h3>
+        <p class="text-slate-600">Endogenous systems that neutralize reactive oxygen species and maintain redox balance across cells and tissues.</p>
       </div>
 
       <!-- Card 2 -->
       <div class="bg-white border border-slate-200 rounded-2xl p-8">
-        <h3 class="font-semibold text-xl mb-3">Inflammatory Resolution</h3>
-        <p class="text-slate-600">Mechanisms that both initiate and resolve inflammatory responses to maintain tissue homeostasis.</p>
+        <h3 class="font-semibold text-2xl mb-4">Inflammatory Resolution</h3>
+        <p class="text-slate-600">Mechanisms that initiate and resolve inflammatory responses to maintain long-term tissue homeostasis.</p>
       </div>
 
       <!-- Card 3 -->
       <div class="bg-white border border-slate-200 rounded-2xl p-8">
-        <h3 class="font-semibold text-xl mb-3">Mitochondrial Quality Control</h3>
-        <p class="text-slate-600">Biogenesis, mitophagy, and dynamic remodeling processes that preserve mitochondrial function.</p>
+        <h3 class="font-semibold text-2xl mb-4">Mitochondrial Quality Control</h3>
+        <p class="text-slate-600">Biogenesis, mitophagy, and dynamic remodeling processes that preserve mitochondrial function with age.</p>
       </div>
 
     </div>
-
-    <div class="mt-16 text-center">
-      <p class="text-slate-600 mb-6">This platform is currently in early development.</p>
-      <a href="https://github.com/tvsnic0419/aether-institute" 
-         class="inline-block px-8 py-3 bg-slate-900 text-white rounded-xl hover:bg-slate-800 transition">
-        View on GitHub
-      </a>
-    </div>
-
   </div>
+
+  <!-- Footer -->
+  <div class="border-t border-slate-200 py-10">
+    <div class="max-w-5xl mx-auto px-6 text-center text-slate-500 text-sm">
+      This platform is in early development. More research modules and tools coming soon.
+    </div>
+  </div>
+
 </body>
 </html>
