@@ -5,90 +5,197 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aether Institute | Cellular Resilience Research</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .section-header { font-feature-settings: "ss02"; }
+  </style>
 </head>
-<body class="bg-[#F8FAFC] text-slate-900">
+<body class="bg-[#F8FAFC] text-slate-900 antialiased">
+
+  <!-- Top Navigation -->
+  <nav class="border-b border-slate-200 bg-white/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-slate-900 rounded-xl flex items-center justify-center">
+          <span class="text-white font-semibold text-sm">A</span>
+        </div>
+        <div>
+          <span class="font-semibold tracking-tight">Aether Institute</span>
+        </div>
+      </div>
+      
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#framework" class="hover:text-slate-600 transition">Framework</a>
+        <a href="#nrf2" class="hover:text-slate-600 transition">NRF2</a>
+        <a href="#evidence" class="hover:text-slate-600 transition">Evidence</a>
+        <a href="#vision" class="hover:text-slate-600 transition">Vision</a>
+      </div>
+      
+      <a href="https://github.com/tvsnic0419/aether-institute" 
+         class="px-5 py-2 text-sm border border-slate-300 rounded-xl hover:bg-slate-50 transition">
+        GitHub
+      </a>
+    </div>
+  </nav>
 
   <!-- Hero -->
-  <div class="max-w-5xl mx-auto px-6 pt-16 pb-20 text-center">
-    <div class="inline-block px-4 py-1 rounded-full border border-slate-300 text-sm tracking-widest mb-6">
+  <div class="max-w-5xl mx-auto px-6 pt-20 pb-24 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-slate-200 text-sm mb-8">
+      <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
       INSTITUTIONAL RESEARCH PLATFORM
     </div>
     
-    <h1 class="text-5xl md:text-6xl font-semibold tracking-[-1.5px] mb-6">
+    <h1 class="text-6xl md:text-7xl font-semibold tracking-[-2px] leading-none mb-8">
       Cellular Resilience<br>in an Aging Population
     </h1>
     
-    <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10">
-      A scientific platform examining oxidative stress, mitochondrial function, 
-      and NRF2 activation pathways that govern cellular defense.
+    <p class="text-2xl text-slate-600 max-w-3xl mx-auto mb-12">
+      A scientific platform advancing understanding of oxidative stress, 
+      mitochondrial function, and NRF2-mediated cellular defense.
     </p>
-
+    
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a href="#framework" 
-         class="px-8 py-3.5 bg-slate-900 text-white rounded-2xl font-medium hover:bg-slate-800 transition">
-        Explore the Framework
+         class="px-10 py-4 bg-slate-950 text-white rounded-2xl font-medium text-lg hover:bg-black transition flex items-center justify-center gap-2">
+        Explore the Science
       </a>
       <a href="#nrf2" 
-         class="px-8 py-3.5 border border-slate-300 rounded-2xl font-medium hover:bg-white transition">
-        Learn About NRF2
+         class="px-10 py-4 border border-slate-300 rounded-2xl font-medium text-lg hover:bg-white transition">
+        Focus on NRF2
       </a>
     </div>
   </div>
 
+  <!-- The Challenge -->
+  <div class="bg-white border-y border-slate-200 py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-x-16 gap-y-10 items-center">
+        <div>
+          <div class="text-sm font-medium tracking-[2px] text-slate-500 mb-3">THE CONTEXT</div>
+          <h2 class="text-4xl font-semibold tracking-tight">Why This Matters Now</h2>
+        </div>
+        <div class="text-lg text-slate-600">
+          The United States is experiencing unprecedented demographic aging. 
+          By 2040, more than one in five Americans will be over 65. 
+          This shift creates urgent pressure to understand the cellular mechanisms driving age-related decline.
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Framework -->
-  <div id="framework" class="max-w-5xl mx-auto px-6 pb-16">
-    <div class="text-center mb-10">
-      <div class="text-sm font-medium tracking-[2px] text-slate-500 mb-2">THE FOUNDATION</div>
-      <h2 class="text-4xl font-semibold tracking-tight">Cellular Defense Systems</h2>
+  <div id="framework" class="max-w-6xl mx-auto px-6 py-20">
+    <div class="text-center mb-14">
+      <div class="text-sm font-medium tracking-[2px] text-slate-500 mb-3">THE FOUNDATION</div>
+      <h2 class="text-5xl font-semibold tracking-[-1.5px]">Cellular Defense Systems</h2>
+      <p class="mt-4 text-xl text-slate-600 max-w-2xl mx-auto">
+        Three interconnected biological systems form the core of cellular resilience.
+      </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white border border-slate-200 rounded-3xl p-8">
-        <h3 class="font-semibold text-2xl mb-4">Oxidative Stress Response</h3>
-        <p class="text-slate-600">Endogenous systems that neutralize reactive oxygen species and maintain redox balance across cells and tissues.</p>
+      <div class="group bg-white border border-slate-200 rounded-3xl p-9 hover:border-slate-300 transition">
+        <div class="text-sm font-medium text-emerald-600 mb-4">SYSTEM 01</div>
+        <h3 class="text-3xl font-semibold tracking-tight mb-6">Oxidative Stress Response</h3>
+        <p class="text-slate-600 leading-relaxed">The network of enzymatic and non-enzymatic systems that neutralize reactive oxygen species and maintain cellular redox homeostasis.</p>
       </div>
       
-      <div class="bg-white border border-slate-200 rounded-3xl p-8">
-        <h3 class="font-semibold text-2xl mb-4">Inflammatory Resolution</h3>
-        <p class="text-slate-600">Mechanisms that both initiate and resolve inflammatory responses to maintain long-term tissue homeostasis.</p>
+      <div class="group bg-white border border-slate-200 rounded-3xl p-9 hover:border-slate-300 transition">
+        <div class="text-sm font-medium text-emerald-600 mb-4">SYSTEM 02</div>
+        <h3 class="text-3xl font-semibold tracking-tight mb-6">Inflammatory Resolution</h3>
+        <p class="text-slate-600 leading-relaxed">The active processes that both initiate protective inflammation and resolve it to prevent chronic damage and support tissue repair.</p>
       </div>
       
-      <div class="bg-white border border-slate-200 rounded-3xl p-8">
-        <h3 class="font-semibold text-2xl mb-4">Mitochondrial Quality Control</h3>
-        <p class="text-slate-600">Biogenesis, mitophagy, and dynamic remodeling processes that preserve mitochondrial function with age.</p>
+      <div class="group bg-white border border-slate-200 rounded-3xl p-9 hover:border-slate-300 transition">
+        <div class="text-sm font-medium text-emerald-600 mb-4">SYSTEM 03</div>
+        <h3 class="text-3xl font-semibold tracking-tight mb-6">Mitochondrial Quality Control</h3>
+        <p class="text-slate-600 leading-relaxed">The dynamic systems of biogenesis, fission/fusion, and mitophagy that maintain mitochondrial health and energy production capacity.</p>
       </div>
     </div>
   </div>
 
   <!-- NRF2 Section -->
-  <div id="nrf2" class="bg-white border-y border-slate-200 py-16">
+  <div id="nrf2" class="bg-white border-y border-slate-200 py-20">
     <div class="max-w-5xl mx-auto px-6">
-      <div class="max-w-2xl">
-        <div class="text-sm font-medium tracking-[2px] text-slate-500 mb-2">KEY MECHANISM</div>
-        <h2 class="text-4xl font-semibold tracking-tight mb-6">NRF2: Master Regulator</h2>
-        <p class="text-lg text-slate-600 mb-8">
-          NRF2 is the central transcription factor that coordinates the cell’s response to oxidative stress. 
-          Activating this pathway supports antioxidant defenses, mitochondrial function, and healthy aging.
-        </p>
+      <div class="grid md:grid-cols-12 gap-x-12 items-center">
+        <div class="md:col-span-7 mb-12 md:mb-0">
+          <div class="text-sm font-medium tracking-[2px] text-violet-600 mb-3">PRIMARY REGULATOR</div>
+          <h2 class="text-5xl font-semibold tracking-[-1.5px] leading-none mb-8">NRF2: The Master Switch of Cellular Defense</h2>
+          
+          <div class="prose prose-lg text-slate-600">
+            <p>NRF2 (Nuclear factor erythroid 2-related factor 2) is the central transcription factor that orchestrates the cellular response to oxidative and electrophilic stress.</p>
+            <p class="mt-4">When activated, NRF2 translocates to the nucleus and upregulates hundreds of protective genes involved in antioxidant defense, detoxification, and mitochondrial support.</p>
+          </div>
+        </div>
         
-        <div class="flex flex-wrap gap-3">
-          <div class="px-4 py-2 bg-slate-100 rounded-2xl text-sm">Antioxidant Gene Activation</div>
-          <div class="px-4 py-2 bg-slate-100 rounded-2xl text-sm">Mitochondrial Support</div>
-          <div class="px-4 py-2 bg-slate-100 rounded-2xl text-sm">Inflammation Modulation</div>
+        <div class="md:col-span-5">
+          <div class="bg-slate-900 text-white rounded-3xl p-9">
+            <div class="text-sm tracking-widest text-slate-400 mb-6">KEY OUTCOMES OF NRF2 ACTIVATION</div>
+            <ul class="space-y-4 text-lg">
+              <li class="flex gap-3">↑ Antioxidant enzyme production</li>
+              <li class="flex gap-3">↑ Glutathione synthesis</li>
+              <li class="flex gap-3">↑ Mitochondrial biogenesis</li>
+              <li class="flex gap-3">↓ Chronic inflammation signaling</li>
+              <li class="flex gap-3">↑ Cellular stress resistance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Evidence Approach -->
+  <div id="evidence" class="max-w-5xl mx-auto px-6 py-20">
+    <div class="max-w-3xl">
+      <div class="text-sm font-medium tracking-[2px] text-slate-500 mb-3">OUR APPROACH</div>
+      <h2 class="text-4xl font-semibold tracking-tight mb-8">How We Handle Evidence</h2>
+      
+      <div class="space-y-8 text-lg text-slate-600">
+        <p>We prioritize primary peer-reviewed literature and mechanistic clarity over narrative convenience.</p>
+        <p>All content is developed with attention to study design, effect sizes, limitations, and biological plausibility. We aim for precision rather than persuasion.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vision -->
+  <div id="vision" class="bg-white border-y border-slate-200 py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <div class="text-sm font-medium tracking-[2px] text-slate-500 mb-3">THE ROAD AHEAD</div>
+        <h2 class="text-4xl font-semibold tracking-tight">Platform Vision</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="border border-slate-200 rounded-3xl p-9">
+          <div class="font-semibold text-xl mb-4">Near Term</div>
+          <ul class="space-y-3 text-slate-600">
+            <li>• Expanded NRF2 research module</li>
+            <li>• Mitochondrial resilience tools</li>
+            <li>• GlyNAC and glutathione literature synthesis</li>
+          </ul>
+        </div>
+        <div class="border border-slate-200 rounded-3xl p-9">
+          <div class="font-semibold text-xl mb-4">Longer Term</div>
+          <ul class="space-y-3 text-slate-600">
+            <li>• Curated research library</li>
+            <li>• Interactive pathway explorers</li>
+            <li>• Structured evidence synthesis tools</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <div class="max-w-5xl mx-auto px-6 py-16 text-center">
-    <p class="text-slate-500 mb-6">This platform is in early development. More research tools and modules coming soon.</p>
-    
-    <a href="https://github.com/tvsnic0419/aether-institute" 
-       class="inline-block px-8 py-3 border border-slate-300 rounded-2xl hover:bg-slate-50 transition">
-      View Project on GitHub
-    </a>
-  </div>
+  <footer class="border-t border-slate-200 py-14">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p class="text-slate-500 mb-6">This platform is in early development.</p>
+      <a href="https://github.com/tvsnic0419/aether-institute" 
+         class="inline-flex items-center justify-center px-8 py-3 border border-slate-300 rounded-2xl hover:bg-white transition">
+        View Full Project on GitHub
+      </a>
+    </div>
+  </footer>
 
 </body>
 </html>
