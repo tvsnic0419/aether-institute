@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TNiC - Premium platform for cellular resilience science and future nutritional systems.">
+    <meta name="theme-color" content="#0a0f1e">
+    <title>TNiC • Transformative Nutrition in Cell-health</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.025em; }
+        .section-header { font-size: 3rem; line-height: 1.05; font-weight: 600; letter-spacing: -0.04em; }
+        .glass { background: rgba(17, 24, 39, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); }
+        .premium-card { transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+        .premium-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+    </style>
+</head>
+<body class="bg-[#0a0f1e] text-slate-200">
+    <!-- NAV -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0a0f1e]/95 border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 rounded-full bg-gradient-to-br from-emerald-400 to-cyan-400 flex items-center justify-center">
+                    <i class="fa-solid fa-dna text-[#0a0f1e]"></i>
+                </div>
+                <span class="font-display text-2xl font-semibold tracking-tighter">TNiC</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-x-8 text-sm">
+                <a href="#science" class="hover:text-emerald-400">Science</a>
+                <a href="#nrf2" class="hover:text-emerald-400">NRF2</a>
+                <a href="#compounds" class="hover:text-emerald-400">Compounds</a>
+                <a href="#products" class="hover:text-emerald-400">Future Products</a>
+            </div>
+            
+            <button onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})" 
+                    class="px-5 py-2 text-sm bg-white text-[#0a0f1e] rounded-2xl font-medium">
+                Join Updates
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="pt-20 pb-12 px-6 max-w-5xl mx-auto text-center">
+        <div class="inline-block px-4 py-1.5 rounded-full bg-white/5 text-xs tracking-widest mb-6 border border-white/10">
+            INSTITUTIONAL RESEARCH BRIEF
+        </div>
+        
+        <h1 class="text-6xl md:text-7xl font-semibold tracking-tighter leading-none mb-6">
+            Cellular resilience is the<br>defining strategy for<br>the decades ahead.
+        </h1>
+        
+        <p class="max-w-md mx-auto text-xl text-slate-300 mb-8">
+            TNiC translates cellular defense biology into precise nutritional systems for long-term health.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button onclick="document.getElementById('science').scrollIntoView({behavior:'smooth'})" 
+                    class="px-8 py-4 bg-emerald-500 text-[#0a0f1e] rounded-3xl font-semibold">
+                Explore the Science
+            </button>
+            <button onclick="showDefenseNetwork()" 
+                    class="px-8 py-4 border border-white/20 rounded-3xl font-semibold">
+                Enter Defense Network
+            </button>
+        </div>
+    </header>
+
+    <!-- TRUST BAR -->
+    <div class="border-y border-white/10 bg-[#111827]/50 py-8">
+        <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl font-semibold text-emerald-400">12</div>
+                <div class="text-xs text-slate-400 mt-1 tracking-widest">HALLMARKS OF AGING</div>
+            </div>
+            <div>
+                <div class="text-4xl font-semibold text-emerald-400">200+</div>
+                <div class="text-xs text-slate-400 mt-1 tracking-widest">NRF2 GENES</div>
+            </div>
+            <div>
+                <div class="text-4xl font-semibold text-emerald-400">5-10x</div>
+                <div class="text-xs text-slate-400 mt-1 tracking-widest">BIOAVAILABILITY TARGET</div>
+            </div>
+            <div>
+                <div class="text-4xl font-semibold text-emerald-400">Lab</div>
+                <div class="text-xs text-slate-400 mt-1 tracking-widest">CORRELATED</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCIENCE -->
+    <section id="science" class="max-w-5xl mx-auto px-6 py-16">
+        <div class="max-w-2xl mb-10">
+            <div class="text-emerald-400 text-xs tracking-[2px] mb-2">MECHANISTIC FOUNDATION</div>
+            <h2 class="text-5xl font-semibold tracking-tighter">Your cells are the operating system of longevity.</h2>
+        </div>
+        
+        <div class="space-y-6">
+            <div class="glass p-8 rounded-3xl border border-white/10">
+                <div class="font-semibold text-xl mb-2">Oxidative Stress &amp; Mitochondrial Decline</div>
+                <p class="text-slate-300">Mitochondria produce most cellular energy but also generate reactive oxygen species. Cumulative damage impairs function and accelerates aging.</p>
+            </div>
+            
+            <div class="glass p-8 rounded-3xl border border-white/10">
+                <div class="font-semibold text-xl mb-2">Inflammaging &amp; Cellular Senescence</div>
+                <p class="text-slate-300">Senescent cells accumulate and drive chronic low-grade inflammation — a root cause of most age-related diseases.</p>
+            </div>
+            
+            <div class="glass p-8 rounded-3xl border border-white/10">
+                <div class="font-semibold text-xl mb-2">Glutathione &amp; NRF2 Defense Collapse</div>
+                <p class="text-slate-300">Glutathione levels drop with age. Supporting NRF2 activation helps restore cellular resilience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NRF2 -->
+    <section id="nrf2" class="max-w-5xl mx-auto px-6 py-16 border-t border-white/10">
+        <div class="max-w-2xl mb-8">
+            <div class="text-emerald-400 text-xs tracking-[2px] mb-2">THE MASTER REGULATOR</div>
+            <h2 class="text-5xl font-semibold tracking-tighter">NRF2: Your cell’s built-in defense system.</h2>
+        </div>
+        <div class="glass p-8 rounded-3xl border border-white/10">
+            <p class="text-slate-300">NRF2 activates over 200 genes involved in antioxidant defense, detoxification, and mitochondrial protection.</p>
+        </div>
+    </section>
+
+    <!-- COMPOUNDS -->
+    <section id="compounds" class="max-w-5xl mx-auto px-6 py-16 border-t border-white/10">
+        <h2 class="text-4xl font-semibold tracking-tighter mb-8">Key Compounds</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="glass p-7 rounded-3xl border border-white/10">
+                <div class="font-semibold text-xl">Sulforaphane</div>
+                <div class="text-emerald-400 text-sm mb-3">NRF2 Activation</div>
+                <p class="text-sm text-slate-300">Potent activator from broccoli sprouts. Supports glutathione and detoxification pathways.</p>
+            </div>
+            <div class="glass p-7 rounded-3xl border border-white/10">
+                <div class="font-semibold text-xl">GlyNAC</div>
+                <div class="text-emerald-400 text-sm mb-3">Glutathione Restoration</div>
+                <p class="text-sm text-slate-300">Clinically shown to restore glutathione levels and mitochondrial function.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FUTURE PRODUCTS -->
+    <section id="products" class="max-w-5xl mx-auto px-6 py-16 border-t border-white/10">
+        <h2 class="text-4xl font-semibold tracking-tighter mb-3">Future Products</h2>
+        <p class="text-slate-300 mb-8">High-absorption formulations currently in development.</p>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass p-7 rounded-3xl border border-white/10">
+                <div class="text-xs text-emerald-400 mb-1">VISION</div>
+                <div class="font-semibold text-xl mb-3">TNiC Shield Ultra</div>
+                <p class="text-sm text-slate-300">Stabilized high-bioavailability sulforaphane complex.</p>
+            </div>
+            <div class="glass p-7 rounded-3xl border border-white/10">
+                <div class="text-xs text-emerald-400 mb-1">VISION</div>
+                <div class="font-semibold text-xl mb-3">TNiC Defense Matrix</div>
+                <p class="text-sm text-slate-300">Daily multi-pathway formula with NRF2 + AMPK support.</p>
+            </div>
+            <div class="glass p-7 rounded-3xl border border-white/10">
+                <div class="text-xs text-emerald-400 mb-1">VISION</div>
+                <div class="font-semibold text-xl mb-3">TNiC Acute Protocol</div>
+                <p class="text-sm text-slate-300">Intensive short-term recovery formula.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="max-w-md mx-auto px-6 py-16 text-center border-t border-white/10">
+        <h3 class="text-3xl font-semibold tracking-tighter mb-3">Stay informed.</h3>
+        <p class="text-slate-300 mb-6 text-sm">High-signal updates on cellular resilience research.</p>
+        
+        <form id="newsletter-form" onsubmit="subscribeNewsletter(event)" class="flex gap-2">
+            <input type="email" id="email-input" placeholder="your@email.com" required class="flex-1 bg-white/5 border border-white/10 rounded-2xl px-4 text-sm">
+            <button type="submit" class="px-6 bg-emerald-500 text-[#0a0f1e] rounded-2xl font-medium">Subscribe</button>
+        </form>
+    </section>
+
+    <footer class="text-center text-xs text-slate-500 py-8 border-t border-white/10">
+        © 2026 TNiC • Educational purposes only
+    </footer>
+
+    <script>
+        // Error handling
+        window.onerror = function(msg, url, line) {
+            console.error("[TNiC Error]", msg, "Line:", line);
+            return true;
+        };
+
+        function subscribeNewsletter(e) {
+            e.preventDefault();
+            const form = document.getElementById('newsletter-form');
+            if (form) {
+                form.innerHTML = `<div class="text-emerald-400">Thank you. You're subscribed.</div>`;
+            }
+        }
+        
+        function showDefenseNetwork() {
+            alert("Defense Network feature coming soon.");
+        }
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (nav) {
+                if (window.scrollY > 30) {
+                    nav.classList.add('nav-scrolled');
+                } else {
+                    nav.classList.remove('nav-scrolled');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
