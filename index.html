@@ -49,17 +49,19 @@
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-[#0a0f1e]">
-            <div class="px-6 py-6 flex flex-col gap-y-4 text-sm">
-                <a href="#science" class="py-2 hover:text-emerald-400">Science</a>
-                <a href="#nrf2" class="py-2 hover:text-emerald-400">NRF2</a>
-                <a href="#compounds" class="py-2 hover:text-emerald-400">Compounds</a>
-                <a href="#lipid-library" class="py-2 hover:text-emerald-400">Delivery</a>
-                <a href="#products" class="py-2 hover:text-emerald-400">Future Products</a>
+            <div class="px-6 py-8 flex flex-col gap-y-2 text-[15px]">
+                <a href="#science" class="py-3 px-1 rounded-xl hover:bg-white/5 active:bg-white/10 transition-colors">Science</a>
+                <a href="#nrf2" class="py-3 px-1 rounded-xl hover:bg-white/5 active:bg-white/10 transition-colors">NRF2</a>
+                <a href="#compounds" class="py-3 px-1 rounded-xl hover:bg-white/5 active:bg-white/10 transition-colors">Compounds</a>
+                <a href="#lipid-library" class="py-3 px-1 rounded-xl hover:bg-white/5 active:bg-white/10 transition-colors">Delivery</a>
+                <a href="#products" class="py-3 px-1 rounded-xl hover:bg-white/5 active:bg-white/10 transition-colors">Future Products</a>
                 
-                <button onclick="showDefenseNetwork(); closeMobileMenu();" 
-                        class="mt-2 w-full px-5 py-3 bg-emerald-500 text-[#0a0f1e] rounded-2xl font-semibold">
-                    Join Defense Network
-                </button>
+                <div class="pt-4 mt-2 border-t border-white/10">
+                    <button onclick="showDefenseNetwork(); closeMobileMenu();" 
+                            class="w-full px-5 py-3.5 bg-emerald-500 active:bg-emerald-600 text-[#0a0f1e] rounded-2xl font-semibold transition-colors">
+                        Join Defense Network
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
