@@ -28,24 +28,44 @@
                 <span class="font-display text-2xl font-semibold tracking-tighter">TNiC</span>
             </div>
             
+            <!-- Desktop Nav -->
             <div class="hidden md:flex items-center gap-x-8 text-sm">
                 <a href="#science" class="hover:text-emerald-400">Science</a>
                 <a href="#nrf2" class="hover:text-emerald-400">NRF2</a>
                 <a href="#compounds" class="hover:text-emerald-400">Compounds</a>
                 <a href="#lipid-library" class="hover:text-emerald-400">Delivery</a>
                 <a href="#products" class="hover:text-emerald-400">Future Products</a>
+                <button onclick="showDefenseNetwork()" 
+                        class="px-5 py-2 text-sm border border-white/20 hover:bg-white/5 rounded-2xl font-medium transition-colors">
+                    Join Defense Network
+                </button>
             </div>
-            
-            <button onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})" 
-                    class="px-5 py-2 text-sm bg-white text-[#0a0f1e] rounded-2xl font-medium">
-                Join Updates
+
+            <!-- Mobile Hamburger -->
+            <button id="mobile-menu-btn" class="md:hidden text-2xl px-2" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
             </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-[#0a0f1e]">
+            <div class="px-6 py-6 flex flex-col gap-y-4 text-sm">
+                <a href="#science" class="py-2 hover:text-emerald-400">Science</a>
+                <a href="#nrf2" class="py-2 hover:text-emerald-400">NRF2</a>
+                <a href="#compounds" class="py-2 hover:text-emerald-400">Compounds</a>
+                <a href="#lipid-library" class="py-2 hover:text-emerald-400">Delivery</a>
+                <a href="#products" class="py-2 hover:text-emerald-400">Future Products</a>
+                
+                <button onclick="showDefenseNetwork(); closeMobileMenu();" 
+                        class="mt-2 w-full px-5 py-3 bg-emerald-500 text-[#0a0f1e] rounded-2xl font-semibold">
+                    Join Defense Network
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- HERO -->
     <header class="relative pt-24 pb-20 px-6 max-w-6xl mx-auto text-center overflow-hidden">
-        <!-- Background Illustration -->
         <div class="absolute inset-0 z-0">
             <img src="/images/Vr8UO.jpg" alt="Cellular mitochondria network" class="w-full h-full object-cover opacity-50">
             <div class="absolute inset-0 bg-gradient-to-b from-[#0a0f1e] via-[#0a0f1e]/90 to-[#0a0f1e]"></div>
@@ -288,29 +308,29 @@
                         <td class="py-5 pr-6 font-medium">Liposomes</td>
                         <td class="py-5 pr-6">Good absorption, versatile, biocompatible</td>
                         <td class="py-5 pr-6">Moderate stability, variable quality</td>
-                        <td class="py-5 pr-6">Vitamins, glutathione, polyphenols</td>
-                        <td class="py-5">High — widely used in supplements</td>
+                        <td class="py-5 pr-6">Vitamins, glutathione, general polyphenols, curcumin</td>
+                        <td class="py-5">High — widely available and commonly used in consumer supplements</td>
                     </tr>
                     <tr class="border-b border-white/10 align-top">
                         <td class="py-5 pr-6 font-medium">Phytosomes</td>
-                        <td class="py-5 pr-6">Strong bond with plant compounds, clinically proven</td>
-                        <td class="py-5 pr-6">Best with specific polyphenols</td>
-                        <td class="py-5 pr-6">Curcumin, resveratrol, silymarin</td>
-                        <td class="py-5">High — many clinically backed extracts</td>
+                        <td class="py-5 pr-6">Strong molecular bond with plant compounds, clinically studied, good stability</td>
+                        <td class="py-5 pr-6">Mainly effective with specific polyphenols; less versatile for other molecules</td>
+                        <td class="py-5 pr-6">Curcumin, resveratrol, silymarin, green tea catechins</td>
+                        <td class="py-5">High — well-established with many clinically backed branded extracts (e.g. Meriva, Siliphos)</td>
                     </tr>
                     <tr class="border-b border-white/10 align-top">
                         <td class="py-5 pr-6 font-medium">NLCs<br><span class="text-xs text-slate-400">(Nanostructured Lipid Carriers)</span></td>
-                        <td class="py-5 pr-6">High stability, good loading, controlled release</td>
-                        <td class="py-5 pr-6">Slightly more complex to produce</td>
-                        <td class="py-5 pr-6">Curcumin, resveratrol, sulforaphane, fisetin</td>
-                        <td class="py-5">Medium-High — growing in premium supplements</td>
+                        <td class="py-5 pr-6">High stability, good loading capacity, controlled release, strong bioavailability gains</td>
+                        <td class="py-5 pr-6">Slightly more complex to manufacture than basic liposomes</td>
+                        <td class="py-5 pr-6">Lipophilic compounds (curcumin, resveratrol, sulforaphane, fisetin)</td>
+                        <td class="py-5">Medium-High — growing rapidly in premium supplements</td>
                     </tr>
                     <tr class="align-top">
-                        <td class="py-5 pr-6 font-medium">Modern LNPs<br><span class="text-xs text-slate-400">(Ionizable)</span></td>
-                        <td class="py-5 pr-6">Excellent endosomal escape, high efficiency</td>
-                        <td class="py-5 pr-6">Complex, more immune activation risk</td>
-                        <td class="py-5 pr-6">mRNA/siRNA, specialized pharma</td>
-                        <td class="py-5">Low in supplements — mainly pharma</td>
+                        <td class="py-5 pr-6 font-medium">Modern LNPs<br><span class="text-xs text-slate-400">(Ionizable Lipid Nanoparticles)</span></td>
+                        <td class="py-5 pr-6">Excellent endosomal escape, very high efficiency for nucleic acids</td>
+                        <td class="py-5 pr-6">More complex and expensive, higher potential immune activation, often over-engineered for supplements</td>
+                        <td class="py-5 pr-6">mRNA/siRNA delivery, specialized pharmaceutical applications</td>
+                        <td class="py-5">Low in supplements — primarily used in pharmaceuticals (e.g. mRNA vaccines)</td>
                     </tr>
                 </tbody>
             </table>
@@ -318,7 +338,7 @@
 
         <div class="mt-8 glass p-7 rounded-3xl border border-white/10">
             <div class="text-emerald-400 text-xs tracking-widest mb-3">TNiC APPROACH</div>
-            <p class="text-slate-300 text-sm">For most longevity compounds, <span class="font-medium">Phytosomes and NLCs</span> currently offer the best balance of performance and practicality. We continue evaluating advanced lipid carriers to maximize real-world effectiveness.</p>
+            <p class="text-slate-300 text-sm">For most longevity and cellular resilience compounds, <span class="font-medium">Phytosomes and NLCs</span> currently offer the best balance of performance, stability, and real-world applicability. We continue evaluating advanced lipid carriers to maximize real-world effectiveness.</p>
         </div>
     </section>
 
@@ -412,6 +432,27 @@
                 this.innerHTML = `<div class="text-center py-6"><div class="text-emerald-400 font-semibold mb-2">You're on the list.</div><p class="text-sm text-slate-400">We'll reach out when the first cohort opens.</p></div>`;
             });
             modal.addEventListener('click', e => { if (e.target === modal) modal.remove(); });
+        }
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.add('hidden');
+        }
+
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', toggleMobileMenu);
+
+            // Close menu when clicking a link
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
         }
 
         window.addEventListener('scroll', () => {
