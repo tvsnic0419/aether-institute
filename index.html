@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TNiC - Premium platform for cellular resilience science and future nutritional systems.">
+    <meta name="description" content="TNiC - Premium formulations for cellular resilience, NRF2 activation, and longevity. Evidence-based nutritional systems for serious health optimization.">
     <meta name="theme-color" content="#0a0f1e">
-    <title>TNiC • Transformative Nutrition in Cell-health</title>
+    <title>TNiC • Cellular Resilience & Longevity</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -15,9 +15,8 @@
         }
         .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.03em; }
         
-        /* Premium Glassmorphism */
         .glass {
-            background: rgba(15, 23, 42, 0.85);
+            background: rgba(15, 23, 42, 0.88);
             backdrop-filter: blur(28px);
             border: 1px solid rgba(255,255,255,0.12);
             box-shadow: 0 8px 32px rgba(0,0,0,0.3);
@@ -27,14 +26,14 @@
             transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
             position: relative;
             overflow: hidden;
-            background: rgba(15, 23, 42, 0.88);
+            background: rgba(15, 23, 42, 0.9);
             border: 1px solid rgba(255,255,255,0.1);
             box-shadow: 0 10px 30px rgba(0,0,0,0.25);
         }
         .premium-card:hover {
             transform: translateY(-6px);
-            border-color: rgba(255,255,255,0.2);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+            border-color: rgba(255,255,255,0.22);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
         }
         .premium-card::before {
             content: '';
@@ -43,14 +42,14 @@
             left: 0;
             right: 0;
             height: 1px;
-            background: linear-gradient(to right, transparent, rgba(255,255,255,0.25), transparent);
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
         }
 
-        .section-header {
-            font-size: 2.85rem;
-            line-height: 1.05;
-            font-weight: 600;
-            letter-spacing: -0.045em;
+        .nav-link {
+            transition: color 0.2s ease;
+        }
+        .nav-link:hover {
+            color: #34d399;
         }
     </style>
 </head>
@@ -67,12 +66,11 @@
             
             <!-- Desktop Nav -->
             <div class="hidden md:flex items-center gap-x-8 text-sm">
-                <a href="#science" class="hover:text-emerald-400 transition-colors">Science</a>
-                <a href="#nrf2" class="hover:text-emerald-400 transition-colors">NRF2</a>
-                <a href="#compounds" class="hover:text-emerald-400 transition-colors">Compounds</a>
-                <a href="#recommendations" class="hover:text-emerald-400 transition-colors">Recommendations</a>
-                <a href="#lipid-library" class="hover:text-emerald-400 transition-colors">Delivery</a>
-                <a href="#products" class="hover:text-emerald-400 transition-colors">Future Products</a>
+                <a href="#science" class="nav-link">Science</a>
+                <a href="#nrf2" class="nav-link">NRF2</a>
+                <a href="#compounds" class="nav-link">Compounds</a>
+                <a href="#recommendations" class="nav-link">Recommendations</a>
+                <a href="#products" class="nav-link">Future Products</a>
                 <button onclick="showDefenseNetwork()" 
                         class="px-5 py-2 text-sm border border-white/20 hover:bg-white/5 active:bg-white/10 rounded-2xl font-medium transition-all">
                     Join Defense Network
@@ -92,7 +90,6 @@
                 <a href="#nrf2" class="py-3.5 px-4 rounded-2xl hover:bg-white/5 active:bg-white/10 transition-colors">NRF2</a>
                 <a href="#compounds" class="py-3.5 px-4 rounded-2xl hover:bg-white/5 active:bg-white/10 transition-colors">Compounds</a>
                 <a href="#recommendations" class="py-3.5 px-4 rounded-2xl hover:bg-white/5 active:bg-white/10 transition-colors">Recommendations</a>
-                <a href="#lipid-library" class="py-3.5 px-4 rounded-2xl hover:bg-white/5 active:bg-white/10 transition-colors">Delivery</a>
                 <a href="#products" class="py-3.5 px-4 rounded-2xl hover:bg-white/5 active:bg-white/10 transition-colors">Future Products</a>
                 
                 <div class="pt-4 mt-3 border-t border-white/10">
@@ -108,28 +105,28 @@
     <!-- HERO -->
     <header class="relative pt-24 pb-20 px-6 max-w-6xl mx-auto text-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="/images/Vr8UO.jpg" alt="Cellular mitochondria network" class="w-full h-full object-cover opacity-45">
+            <img src="/images/Vr8UO.jpg" alt="Cellular mitochondria network" class="w-full h-full object-cover opacity-40">
             <div class="absolute inset-0 bg-gradient-to-b from-[#0a0f1e] via-[#0a0f1e]/95 to-[#0a0f1e]"></div>
         </div>
 
         <div class="relative z-10">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs tracking-[2px] mb-8">
                 <i class="fa-solid fa-microscope"></i>
-                <span>INSTITUTIONAL RESEARCH BRIEF</span>
+                <span>PREMIUM CELLULAR RESILIENCE</span>
             </div>
             
             <h1 class="text-6xl md:text-7xl font-semibold tracking-tighter leading-[1.05] mb-6">
                 Cellular resilience is the<br>defining strategy for<br>the decades ahead.
             </h1>
             
-            <p class="max-w-lg mx-auto text-xl text-slate-300 mb-10">
-                TNiC translates cellular defense biology into precise nutritional systems<br class="hidden md:block"> for long-term health and performance.
+            <p class="max-w-xl mx-auto text-xl text-slate-300 mb-10">
+                TNiC develops high-bioavailability formulations that target the core mechanisms of aging and cellular defense.
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button onclick="document.getElementById('science').scrollIntoView({behavior:'smooth'})" 
+                <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})" 
                         class="px-9 py-4 bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700 text-[#0a0f1e] rounded-3xl font-semibold transition-all">
-                    Explore the Science
+                    Explore Future Products
                 </button>
                 <button onclick="showDefenseNetwork()" 
                         class="px-9 py-4 border border-white/20 hover:bg-white/5 active:bg-white/10 rounded-3xl font-semibold transition-all">
@@ -145,22 +142,18 @@
             <div class="flex flex-col items-center">
                 <div class="text-5xl font-semibold text-emerald-400 tracking-tighter">12</div>
                 <div class="text-xs text-slate-400 mt-2 tracking-[2px]">HALLMARKS OF AGING</div>
-                <div class="w-8 h-px bg-white/20 mt-3"></div>
             </div>
             <div class="flex flex-col items-center">
                 <div class="text-5xl font-semibold text-emerald-400 tracking-tighter">200+</div>
                 <div class="text-xs text-slate-400 mt-2 tracking-[2px]">NRF2-REGULATED GENES</div>
-                <div class="w-8 h-px bg-white/20 mt-3"></div>
             </div>
             <div class="flex flex-col items-center">
                 <div class="text-5xl font-semibold text-emerald-400 tracking-tighter">5–10×</div>
                 <div class="text-xs text-slate-400 mt-2 tracking-[2px]">BIOAVAILABILITY TARGET</div>
-                <div class="w-8 h-px bg-white/20 mt-3"></div>
             </div>
             <div class="flex flex-col items-center">
                 <div class="text-5xl font-semibold text-emerald-400 tracking-tighter">Lab</div>
                 <div class="text-xs text-slate-400 mt-2 tracking-[2px]">CORRELATED PROTOCOLS</div>
-                <div class="w-8 h-px bg-white/20 mt-3"></div>
             </div>
         </div>
     </div>
@@ -434,6 +427,55 @@
     </p>
 </section>
 
+    <!-- FUTURE PRODUCTS -->
+    <section id="products" class="max-w-6xl mx-auto px-6 py-20 border-t border-white/10">
+        <div class="max-w-2xl mb-12">
+            <div class="text-emerald-400 text-xs tracking-[2.5px] mb-3">COMING SOON</div>
+            <h2 class="text-5xl font-semibold tracking-tighter">Future Products</h2>
+            <p class="mt-4 text-lg text-slate-300">High-absorption formulations currently in development.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- NRF2 Elevate - Featured -->
+            <div class="glass premium-card rounded-3xl overflow-hidden border border-white/10">
+                <img src="/images/nrf2-elevate.jpg" alt="TNiC NRF2 Elevate" class="w-full aspect-[4/3] object-cover">
+                <div class="p-7">
+                    <div class="text-emerald-400 text-xs tracking-widest mb-1">FLAGSHIP FORMULA</div>
+                    <div class="font-semibold text-2xl tracking-tight mb-2">TNiC NRF2 Elevate</div>
+                    <p class="text-slate-300 text-sm mb-4">Advanced NRF2 activation complex with Sulforaphane, Green Tea Extract, and GlyNAC.</p>
+                    
+                    <div class="text-xs text-slate-400 space-y-1 mb-5">
+                        <div>Sulforaphane 50 mg</div>
+                        <div>Green Tea Extract 200 mg (60% EGCG)</div>
+                        <div>GlyNAC 600 mg</div>
+                    </div>
+                    
+                    <div class="inline-block px-4 py-1.5 text-xs border border-white/20 rounded-xl text-emerald-400">
+                        Coming Soon
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass premium-card rounded-3xl overflow-hidden border border-white/10">
+                <img src="/images/iwbdK.jpg" alt="TNiC Shield Ultra" class="w-full aspect-[4/3] object-cover">
+                <div class="p-7">
+                    <div class="text-emerald-400 text-xs tracking-widest mb-1">VISION</div>
+                    <div class="font-semibold text-2xl tracking-tight mb-2">TNiC Shield Ultra</div>
+                    <p class="text-slate-300 text-sm">Stabilized high-bioavailability sulforaphane complex for powerful NRF2 activation.</p>
+                </div>
+            </div>
+
+            <div class="glass premium-card rounded-3xl overflow-hidden border border-white/10">
+                <img src="/images/CtxcA.jpg" alt="TNiC Defense Matrix" class="w-full aspect-[4/3] object-cover">
+                <div class="p-7">
+                    <div class="text-emerald-400 text-xs tracking-widest mb-1">VISION</div>
+                    <div class="font-semibold text-2xl tracking-tight mb-2">TNiC Defense Matrix</div>
+                    <p class="text-slate-300 text-sm">Daily multi-pathway formula combining NRF2 + AMPK + mitochondrial support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- LIPID DELIVERY LIBRARY -->
     <section id="lipid-library" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/10">
         <div class="max-w-2xl mb-10">
@@ -492,50 +534,12 @@
         </div>
     </section>
 
-    <!-- FUTURE PRODUCTS -->
-    <section id="products" class="max-w-6xl mx-auto px-6 py-20 border-t border-white/10">
-        <div class="max-w-2xl mb-12">
-            <div class="text-emerald-400 text-xs tracking-[2.5px] mb-3">COMING SOON</div>
-            <h2 class="text-5xl font-semibold tracking-tighter">Future Products</h2>
-            <p class="mt-4 text-lg text-slate-300">High-absorption formulations currently in development.</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="glass premium-card rounded-3xl overflow-hidden border border-white/10">
-                <img src="/images/iwbdK.jpg" alt="TNiC Shield Ultra" class="w-full aspect-[4/3] object-cover">
-                <div class="p-7">
-                    <div class="text-emerald-400 text-xs tracking-widest mb-1">VISION</div>
-                    <div class="font-semibold text-2xl tracking-tight mb-2">TNiC Shield Ultra</div>
-                    <p class="text-slate-300 text-sm">Stabilized high-bioavailability sulforaphane complex for powerful NRF2 activation.</p>
-                </div>
-            </div>
-
-            <div class="glass premium-card rounded-3xl overflow-hidden border border-white/10">
-                <img src="/images/CtxcA.jpg" alt="TNiC Defense Matrix" class="w-full aspect-[4/3] object-cover">
-                <div class="p-7">
-                    <div class="text-emerald-400 text-xs tracking-widest mb-1">VISION</div>
-                    <div class="font-semibold text-2xl tracking-tight mb-2">TNiC Defense Matrix</div>
-                    <p class="text-slate-300 text-sm">Daily multi-pathway formula combining NRF2 + AMPK + mitochondrial support.</p>
-                </div>
-            </div>
-
-            <div class="glass premium-card rounded-3xl overflow-hidden border border-white/10">
-                <img src="/images/5cSVS.jpg" alt="TNiC Acute Protocol" class="w-full aspect-[4/3] object-cover">
-                <div class="p-7">
-                    <div class="text-emerald-400 text-xs tracking-widest mb-1">VISION</div>
-                    <div class="font-semibold text-2xl tracking-tight mb-2">TNiC Acute Protocol</div>
-                    <p class="text-slate-300 text-sm">Intensive short-term recovery formula for periods of high oxidative or metabolic stress.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- NEWSLETTER -->
     <section id="newsletter" class="max-w-md mx-auto px-6 py-16 text-center border-t border-white/10">
         <h3 class="text-3xl font-semibold tracking-tighter mb-3">Stay informed.</h3>
         <p class="text-slate-300 mb-6 text-sm">High-signal updates on cellular resilience research.</p>
         
-        <!-- Formspree Newsletter Form - Replace YOUR-NEWSLETTER-FORM-ID with your real endpoint -->
+        <!-- Formspree Newsletter Form -->
         <form action="https://formspree.io/f/YOUR-NEWSLETTER-FORM-ID" method="POST" class="flex gap-2">
             <input type="email" name="email" placeholder="your@email.com" required class="flex-1 bg-white/5 border border-white/10 rounded-2xl px-4 text-sm">
             <button type="submit" class="px-6 bg-emerald-500 text-[#0a0f1e] rounded-2xl font-medium">Subscribe</button>
@@ -545,7 +549,7 @@
 
     <footer class="border-t border-white/10 pt-12 pb-8 px-6">
         <div class="max-w-6xl mx-auto text-center text-xs text-slate-500">
-            © 2026 TNiC • Educational purposes only
+            © 2026 TNiC • Educational purposes only. Not intended to diagnose, treat, cure, or prevent any disease.
         </div>
     </footer>
 
@@ -567,7 +571,7 @@
                     <div class="px-8 py-8">
                         <p class="text-slate-300 mb-6 text-sm">Private early-access community for serious longevity optimization. Get advanced protocols, research summaries, and input on next-gen formulations.</p>
                         
-                        <!-- Formspree Defense Network Form - Replace YOUR-DEFENSE-FORM-ID with your real endpoint -->
+                        <!-- Formspree Defense Network Form -->
                         <form id="defense-form" action="https://formspree.io/f/YOUR-DEFENSE-FORM-ID" method="POST" class="space-y-4">
                             <input type="email" name="email" placeholder="your@email.com" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-3 text-sm">
                             <select name="focus" class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-3 text-sm">
