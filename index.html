@@ -51,6 +51,26 @@
         .nav-link:hover {
             color: #34d399;
         }
+
+        /* ── Scroll Reveal ─────────────────────────────────────────────── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-d1 { transition-delay: 0.08s; }
+        .reveal-d2 { transition-delay: 0.16s; }
+        .reveal-d3 { transition-delay: 0.24s; }
+        .reveal-d4 { transition-delay: 0.32s; }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { transition: none; opacity: 1; transform: none; }
+        }
     </style>
 </head>
 <body class="bg-[#0a0f1e] text-slate-200">
@@ -143,11 +163,11 @@
     <div class="border-y border-white/10 bg-[#111827]/60 py-9">
         <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 text-center">
             <div class="flex flex-col items-center">
-                <div class="text-5xl font-semibold text-emerald-400 tracking-tighter">12</div>
+                <div class="text-5xl font-semibold text-emerald-400 tracking-tighter" data-count="12">12</div>
                 <div class="text-xs text-slate-400 mt-2 tracking-[2px]">HALLMARKS OF AGING</div>
             </div>
             <div class="flex flex-col items-center">
-                <div class="text-5xl font-semibold text-emerald-400 tracking-tighter">200+</div>
+                <div class="text-5xl font-semibold text-emerald-400 tracking-tighter" data-count="200" data-suffix="+">200+</div>
                 <div class="text-xs text-slate-400 mt-2 tracking-[2px]">NRF2-REGULATED GENES</div>
             </div>
             <div class="flex flex-col items-center">
@@ -904,6 +924,58 @@
             const nav = document.querySelector('nav');
             if (nav) nav.style.boxShadow = window.scrollY > 30 ? '0 1px 0 0 rgba(52,211,153,0.12)' : '';
         }, { passive: true });
+
+        // ── Scroll Reveal ────────────────────────────────────────────────────
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+        // Reveal sections (skip hero header — it's above fold)
+        document.querySelectorAll('section, .border-y').forEach(el => {
+            el.classList.add('reveal');
+            revealObserver.observe(el);
+        });
+
+        // Stagger cards within grids
+        document.querySelectorAll('.grid').forEach(grid => {
+            Array.from(grid.children).forEach((card, i) => {
+                const delay = ['reveal-d1', 'reveal-d2', 'reveal-d3', 'reveal-d4'][Math.min(i, 3)];
+                card.classList.add('reveal', delay);
+                revealObserver.observe(card);
+            });
+        });
+
+        // ── Count-Up Numbers ─────────────────────────────────────────────────
+        function animateCount(el) {
+            const target = parseInt(el.dataset.count, 10);
+            const suffix = el.dataset.suffix || '';
+            const duration = 1400;
+            const start = performance.now();
+            function tick(now) {
+                const elapsed = now - start;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                el.textContent = Math.floor(eased * target) + suffix;
+                if (progress < 1) requestAnimationFrame(tick);
+            }
+            requestAnimationFrame(tick);
+        }
+
+        const countObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCount(entry.target);
+                    countObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('[data-count]').forEach(el => countObserver.observe(el));
     </script>
 </body>
 </html>
